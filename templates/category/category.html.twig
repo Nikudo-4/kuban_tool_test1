@@ -1,0 +1,16 @@
+
+<ul class="list-group">
+    {% for item in categories %}
+        <li>
+            <h2>{{item.title}}</h2> <br>
+
+            img:{{item.img}}
+
+            {% if item.children is not null %}
+                <ul>
+                    {% include 'category/category.html.twig' with { 'categories': item.children } %}
+                </ul>
+            {% endif %}
+        </li>
+    {% endfor %}
+</ul>

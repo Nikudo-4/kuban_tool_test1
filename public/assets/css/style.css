@@ -1,0 +1,23 @@
+a{
+    background-color: blue;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 16px;
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+    margin-bottom: 20px;
+}
+ul li{
+    list-style: none;   
+    border: 2px solid blue;
+
+    border-top: 2px solid blue;
+    border-bottom: none;
+    border-right: 2px solid blue;
+    padding: 10px 5px 0px 5px;
+}
+ul li:last-child{
+
+    /* border-bottom: 2px solid blue; */
+}
